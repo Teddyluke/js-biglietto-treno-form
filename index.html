@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>form biglietto treno</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <div class="corniceform">
+      <div class="">
+        <label for="nome">Nome</label> <br>
+        <input id="nome" type="text" name="nome" value="">
+      </div>
+      <div class="">
+        <label for="km">Km da percorrere</label> <br>
+        <input id="km" type="number" name="km" value="">
+      </div>
+      <div class="">
+        <label for="categoria">Categoria</label> <br>
+        <select id="categoria" class="" name="categoria">
+          <option value="maggiorenne">Maggiorenne</option>
+          <option value="under18">Under18</option>
+          <option value="over65">Over65</option>
+        </select>
+      </div>
+      <div class="">
+        <button id="creaBiglietto"type="button" name="button">Stampa il tuo biglietto</button>
+      </div>
+    </div>
+
+    <div class="biglietto">
+
+      <div class="">
+        <h3>nome passeggero</h3>
+        <h4 id="passeggero"></h4>
+      </div>
+      <div class="">
+        <h3>totale Km</h3>
+        <h4 id="chilometraggio"></h4>
+      </div>
+      <div class="">
+        <h3>numero treno</h3>
+        <h4 id="numTreno"></h4>
+      </div>
+      <div class="">
+        <h3>carrozza</h3>
+        <h4 id="numCarrozza"></h4>
+      </div>
+      <div class="">
+        <h3>Costo Biglietto</h3>
+        <h4 id="prezzototale"></h4>
+      </div>
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="js/script.js">
+
+    </script>
+  </body>
+</html>
