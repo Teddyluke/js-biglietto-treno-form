@@ -36,3 +36,13 @@ button {
   border-radius: 10px;
   width: 45%;
 }
+
+.hidden {
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.show {
+  opacity: 1;
+  transition: 0.5s;
+}

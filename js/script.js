@@ -19,7 +19,6 @@ creaBiglietto.addEventListener("click", function () {
   }
 
 var numTreno = Math.floor(Math.random() * (10000 - 9000 + 1)) + 9000;
-
 var numCarrozza = Math.floor(Math.random() * (13 - 1 + 1)) + 1;
 
 document.getElementById('passeggero').innerHTML = nome;
@@ -27,4 +26,20 @@ document.getElementById('chilometraggio').innerHTML = km;
 document.getElementById('numTreno').innerHTML = numTreno;
 document.getElementById('numCarrozza').innerHTML = numCarrozza;
 document.getElementById('prezzototale').innerHTML = costofinale.toFixed(2);
+
+document.getElementById('biglietto').classList.add("show");
+document.getElementById('biglietto').classList.remove("hidden");
+
+})
+
+annullaBiglietto.addEventListener("click", function (){
+
+  document.getElementById('biglietto').classList.add("hidden");
+  document.getElementById('biglietto').classList.remove("show");
+
+  document.getElementById('nome').value = "";
+  document.getElementById('km').value = "";
+  document.getElementById('categoria').value = "";
+
+
 })
